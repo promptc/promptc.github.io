@@ -1,37 +1,76 @@
 <html>
     <head>
-        <title>Promptc 1.0 Pre-setup | promptc.dev</title>
+        <title>Welcome | promptc.dev</title>
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
         <style>
             .container {
-                height: 200px;
                 position: relative;
+                background-color: rgb(251,251,242);
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
             }
             
             .center {
                 margin: 0;
-                position: absolute;
+                position: relative;
                 top: 50%;
                 left: 50%;
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
+                width: 95%;
+                height: 90%;
+                border: 4px solid rgb(100,144,201);
+            }
+
+            .content {
+                margin: 0;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 50%;
+                color: rgb(100,144,201);
+            }
+
+            .button {
+                background-color: rgb(251,251,242);
+                border: 2px solid rgb(100,144,201);
+                color: rgb(100,144,201);
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                cursor: pointer;
+                transition-duration: 0.4s;
+            }
+            .button:hover {
+                background-color: rgb(100,144,201);
+                color: white;
+            }
+            hr {
+                border: 0.5px solid rgb(100,144,201);
             }
         </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     </head>
     
-    <body style="background-color: #008080;">
-        <div style="background-color: #008080; width: 100%; height: 100%;" class="container">
-            <h1 style="font-style: italic; color: white; padding: 20px;">Promptc 1.0 Pre-setup</h1>
-            <div class="center" style="background-color: rgb(203,206,209); padding: 20px;">
-                <h1 >promptc<sup style="color:blue; font-style: italic;">v1</sup></h1>
-                <hr style="color:blue">
-                <p style="color:black">We are building <span style="font-style: italic;">Next Generation Prompt Solution</span></p>
-                <div style="display: flex;">
-                    <button style="width: 100px; height: 40px;;">Join the waitlist (fake)</button>
+    <body class="container">
+        <div class="center">
+            <div class="content">
+                <h1 style="text-decoration: underline;" >promptc</h1>
+                
+                <p style="color:black">Build <span style="font-style: italic;">Next generation Prompt standard</span></p>
+                <div style="display: flex; align-items: center;justify-content: center;">
+                    <button class="button" onclick="window.location.href='https://github.com/promptc/pot';" style="width: 100px; height: 40px;">pot</button>
                     &nbsp;
-                    <button style="width: 100px; height: 40px;;">Cancel</button>
+                    <button class="button" onclick="window.location.href='https://github.com/promptc/promptc-go';" style="width: 100px; height: 40px;">promptc-go</button>
+                    &nbsp;
+                    <button class="button" onclick="window.location.href='https://github.com/promptc';" style="width: 100px; height: 40px;">GitHub</button>
                 </div>
                 <hr>
-                Copyright &copy; 2023 promptc.dev
+                Copyright &copy; 1998 promptc.dev
             </div>
             
         </div>
